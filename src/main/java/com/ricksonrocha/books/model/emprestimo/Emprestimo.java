@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 import org.springframework.cglib.core.Local;
 
+import com.ricksonrocha.books.model.usuario.Usuario;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -36,6 +38,6 @@ public class Emprestimo {
     private Local dataDevolucao;
 
     @ManyToOne
-    private Emprestimo emprestimo;
+    private Usuario usuario;
     
 }
