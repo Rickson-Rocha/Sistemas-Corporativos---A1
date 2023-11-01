@@ -25,7 +25,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
-@ToString
+@ToString 
 public class Autor {
 
     @Id
@@ -35,11 +35,8 @@ public class Autor {
     @NotBlank
     private String nacionalidade;
 
-    @OneToMany
+    @OneToMany (mappedBy = "user")
     private List<Livro> livros;
     
-
-
-
 
 }
