@@ -2,6 +2,8 @@ package com.ricksonrocha.books.model.livro;
 
 import java.time.LocalDate;
 
+import com.ricksonrocha.books.model.autor.Autor;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -39,5 +41,5 @@ public class Livro {
     @NotBlank
     private Integer copiasDispo;
 
-    // private Usuario usuario;
+    private Autor autor;
 }
